@@ -1,38 +1,43 @@
 .App {
   text-align: center;
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.paragraph-container {
+  padding: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.details {
+  background-color: aliceblue;
+}
+
+.lyrics, .original-lyrics {
+  white-space: break-spaces;
+}
+
+.lyrics {
+  font-size: 1.2rem;
+}
+
+.original-lyrics {
+  color: rgb(112, 112, 112);
+}
+
+@media screen and (min-width: 1200px) {
+  .App {
+    display: flex;
+    justify-content: center;
+  }
+  .lyrics-page {
+    width: 80%;
+  }
+  .sheet-music {
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media screen and (max-width: 600px) {
+  .sheet-music {
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
