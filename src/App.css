@@ -3,6 +3,12 @@
   font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .paragraph-container {
   padding: 0.5rem;
 }
@@ -11,7 +17,7 @@
   background-color: aliceblue;
 }
 
-.lyrics, .original-lyrics {
+.lyrics, .original-lyrics, .jp-translation {
   white-space: break-spaces;
 }
 
@@ -36,8 +42,8 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .sheet-music {
 
   }
-}
+} */

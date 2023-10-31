@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import LyricsContainer from '../components/LyricsContainer'
 import SheetMusicContainer from '../components/SheetMusicContainer'
 import arrow from '../data/lyrics/arrow';
+import setsugekka from '../data/lyrics/setsugekka';
+import Menu from '../components/Menu';
+import DisplayContainer from '../components/DisplayContainer';
 
 export default function LyricsPage() {
   const queryParameters = new URLSearchParams(window.location.search)
@@ -16,9 +19,9 @@ export default function LyricsPage() {
       // case "akatsukizukuyo":
       //   setData(akatsuki);
       //   break;
-      // case "setsugekka":
-      //   setData(setsugekka);
-      //   break;
+      case "setsugekka":
+        setData(setsugekka);
+        break;
       default:
         setData(arrow);
     }
@@ -26,8 +29,9 @@ export default function LyricsPage() {
 
   return (
     <div className='lyrics-page'>
+      <Menu />
       <LyricsContainer lyricData={data.lyricData} />
-      <SheetMusicContainer filename={data.filename} />
+      <SheetMusicContainer fileName={data.filename} />
     </div>
   )
 }

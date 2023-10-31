@@ -1,44 +1,106 @@
-// import React, { useState, useRef, useEffect } from 'react';
-
 import React, { Component } from 'react';
 import OpenSheetMusicDisplay from './OpenSheetMusicDisplay';
 
 export default class SheetMusicContainer extends Component {
-
     constructor(props) {
         super(props);
-        this.state = { file: props.filename };
+        this.state = {
+          fileName: this.props.fileName,
+          xmlDocument: null,
+          error: null
+        };
+      }
+    
+      componentDidMount() {
+        this.fetchXMLData();
       }
 
+    componentDidUpdate(prevProps) {
+        // Check if the props have changed
+        if (this.props.fileName !== prevProps.fileName) {
+            this.setState({ fileName: this.props.fileName }, () => {
+              this.fetchXMLData();
+            });
+          }
+      }
+    
+      fetchXMLData = () => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', this.state.fileName, true);
+        xhr.onreadystatechange = () => {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              const xmlDoc = xhr.responseXML;
+              this.setState({ xmlDocument: xmlDoc });
+            } else {
+              this.setState({ error: 'Failed to fetch the file' });
+            }
+          }
+        };
+        xhr.send();
+      };
+    
+      render() {
+        const { xmlDocument, error } = this.state;
+    
+        if (error) {
+          return <div>Error: {error}</div>;
+        }
+    
+        if (xmlDocument === null) {
+          return <div>Loading...</div>;
+        }
+    
+        return (
+          <div>
+            <OpenSheetMusicDisplay file={this.state.xmlDocument} />
+          </div>
+        );
+      }
+    }
 
-  render() {
-    return (
-      <div>
-        <OpenSheetMusicDisplay file={this.state.file} />
-      </div>
-    )
-  }
-}
 
+// import React, { Component } from 'react';
+// import OpenSheetMusicDisplay from './OpenSheetMusicDisplay';
 
-// const SheetMusicContainer = ({ filename }) => {
-//   const osmdRef = useRef(null);
-//   const [file, setFile] = useState(filename);
+// export default class SheetMusicContainer extends Component {
 
-//   useEffect(() => {
-//     if (osmdRef.current) {
-//       const osmd = new OpenSheetMusicDisplay(osmdRef.current);
-//       osmd.load(file).then(() => {
-//         // Do any additional setup after loading the music file
-//       }).catch((error) => {
-//         console.error('Error loading file', error);
-//       });
-//     }
-//   }, [file]);
+//     constructor(props) {
+//         super(props);
+//         this.state = { data: props.data };
+//       }
+
+//       componentDidUpdate(prevProps) {
+//         // Check if the props have changed
+//         if (this.props.data !== prevProps.data) {
+//           this.setState({
+//             data: this.props.data
+//           });
+//         }
+//       }
+
+//   render() {
+//     return (
+//       <div>
+//         <OpenSheetMusicDisplay file={this.state.data} />
+//       </div>
+//     )
+//   }
+// }
+
+// import React, { useState, useEffect } from 'react';
+// import OpenSheetMusicDisplay from './OpenSheetMusicDisplay';
+
+// export default function SheetMusicContainer(data) {
+//     const [xmlData, setXmlData] = useState(data);
+
+//     useEffect(() => {
+//         setXmlData(data);
+//     },[data])
 
 //   return (
-//     <div ref={osmdRef} />
-//   );
-// };
-
-// export default SheetMusicContainer;
+//     <div>
+//       <OpenSheetMusicDisplay file={xmlData} />
+//     </div>
+//   )
+// }
