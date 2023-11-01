@@ -3,7 +3,24 @@
   font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
+h3 {
+  font-family: 'Optima', 'Cambria', 'Perpetua';
+}
+
+h3 a {
+  text-decoration: none;
+  color: grey;
+}
+
+.menu-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
