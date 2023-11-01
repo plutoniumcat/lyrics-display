@@ -4,7 +4,6 @@ import SheetMusicContainer from '../components/SheetMusicContainer'
 import arrow from '../data/lyrics/arrow';
 import setsugekka from '../data/lyrics/setsugekka';
 import Menu from '../components/Menu';
-import DisplayContainer from '../components/DisplayContainer';
 
 export default function LyricsPage() {
   const queryParameters = new URLSearchParams(window.location.search)

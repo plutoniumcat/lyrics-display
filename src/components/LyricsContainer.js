@@ -3,7 +3,7 @@ import ParagraphContainer from './ParagraphContainer'
 
 export default function LyricsContainer(lyricData) {
   return (
-    <div>
+    <div className='lyrics-container'>
       {lyricData.lyricData.map((para, index) => {
         return(
             <div key={index}>

@@ -9,6 +9,10 @@
   justify-content: space-around;
 }
 
+.lyrics-container {
+  margin-bottom: 1rem;
+}
+
 .paragraph-container {
   padding: 0.5rem;
 }
