@@ -1,4 +1,4 @@
-const arrow = {
+const defaultData = {
     lyricData: [
         {
             lyrics: "Let the wind take flight\nThrough the wasteland it soars\nAs it bids earth goodbye\nDancing till they're gone\nThe ashes will scorch the sky",
@@ -162,7 +162,7 @@ const arrow = {
             }
         }
     ],
-    filename: "arrow.musicxml"
+    filename: "arrow_copy.musicxml"
 }
 
-export default arrow;
+export default defaultData;

@@ -9,6 +9,7 @@ export default class SheetMusicContainer extends Component {
           xmlDocument: null,
           error: null
         };
+        this.abortController = new AbortController();
       }
     
       componentDidMount() {
@@ -18,6 +19,8 @@ export default class SheetMusicContainer extends Component {
     componentDidUpdate(prevProps) {
         // Check if the props have changed
         if (this.props.fileName !== prevProps.fileName) {
+          this.abortController.abort(); // Abort the previous request
+          this.abortController = new AbortController(); // Create a new AbortController
             this.setState({ fileName: this.props.fileName }, () => {
               this.fetchXMLData();
             });
@@ -25,20 +28,27 @@ export default class SheetMusicContainer extends Component {
       }
     
       fetchXMLData = () => {
+        const { signal } = this.abortController;
         const xhr = new XMLHttpRequest();
         xhr.open('GET', this.state.fileName, true);
         xhr.onreadystatechange = () => {
           if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-              const xmlDoc = xhr.responseXML;
-              this.setState({ xmlDocument: xmlDoc });
-            } else {
-              this.setState({ error: 'Failed to fetch the file' });
+            if (!signal.aborted) {
+              if (xhr.status === 200) {
+                const xmlDoc = xhr.responseXML;
+                this.setState({ xmlDocument: xmlDoc });
+              } else {
+                this.setState({ error: 'Failed to fetch the file' });
+              }
             }
           }
         };
         xhr.send();
       };
+
+      componentWillUnmount() {
+        this.abortController.abort(); // Abort any ongoing request when the component is unmounted
+      }
     
       render() {
         const { xmlDocument, error } = this.state;

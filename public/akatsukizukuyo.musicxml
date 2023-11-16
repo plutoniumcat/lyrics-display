@@ -9,7 +9,7 @@
 Transcribed by Muzi YiYean</creator>
     <encoding>
       <software>MuseScore 4.1.1</software>
-      <encoding-date>2023-11-05</encoding-date>
+      <encoding-date>2023-11-19</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="no"/>
@@ -85,6 +85,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -306,6 +307,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -429,6 +431,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -564,7 +567,7 @@ Transcribed by Muzi YiYean</creator>
           </notations>
         <lyric number="1">
           <syllabic>middle</syllabic>
-          <text>ban</text>
+          <text>band</text>
           </lyric>
         </note>
       <harmony print-frame="no">
@@ -601,7 +604,7 @@ Transcribed by Muzi YiYean</creator>
         <beam number="2">begin</beam>
         <lyric number="1">
           <syllabic>end</syllabic>
-          <text>d'ning</text>
+          <text>'ning</text>
           </lyric>
         </note>
       <note>
@@ -614,6 +617,7 @@ Transcribed by Muzi YiYean</creator>
         <tie type="start"/>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -650,6 +654,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -726,6 +731,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -852,6 +858,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -1031,6 +1038,7 @@ Transcribed by Muzi YiYean</creator>
         <tie type="start"/>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -1327,6 +1335,7 @@ Transcribed by Muzi YiYean</creator>
         <tie type="start"/>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -1429,6 +1438,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">begin</beam>
         <lyric number="1">
@@ -1638,6 +1648,7 @@ Transcribed by Muzi YiYean</creator>
         <tie type="start"/>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -1683,6 +1694,7 @@ Transcribed by Muzi YiYean</creator>
         <tie type="start"/>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -2053,6 +2065,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">begin</beam>
         <lyric number="1">
@@ -2244,6 +2257,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -2355,6 +2369,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -2428,6 +2443,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <lyric number="1">
@@ -2467,6 +2483,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">begin</beam>
         <lyric number="1">
@@ -2539,6 +2556,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <lyric number="1">
           <syllabic>single</syllabic>
@@ -2589,6 +2607,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -2683,6 +2702,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -2756,6 +2776,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <lyric number="1">
@@ -2810,6 +2831,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -2981,6 +3003,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>2</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -3054,6 +3077,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <lyric number="1">
@@ -3094,6 +3118,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">begin</beam>
         <lyric number="1">
@@ -3336,6 +3361,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>down</stem>
         <beam number="1">begin</beam>
         <lyric number="1">
@@ -3537,6 +3563,7 @@ Transcribed by Muzi YiYean</creator>
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">begin</beam>
         <lyric number="1">
