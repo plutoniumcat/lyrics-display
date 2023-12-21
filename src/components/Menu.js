@@ -5,6 +5,7 @@ export default function Menu() {
     <div className='menu-container'>
         <div>
           <h3><a href='https://moon-struck.net'>moon-struck.net</a></h3>
+          <a href="mailto:alexandrialeemcpherson@gmail.com">Email me!</a>
         </div>
         <div className='menu'>
           <div>
