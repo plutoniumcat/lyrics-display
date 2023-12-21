@@ -92,7 +92,7 @@ const arrow = {
             }
         },
         {
-            lyrics: "I pray now to heaven \nMay your soul rest forever",
+            lyrics: "I pray now to heaven \n May your soul rest forever",
             details: {
                 original: "祈りよ届け\n安らかに眠れ",
                 jpTranslation: "天に届け\n安らかに眠れ"
